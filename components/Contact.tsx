@@ -76,7 +76,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 overflow-visible">
-          <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-purple-400 via-blue-400 to-purple-600 bg-clip-text text-transparent mb-6 leading-tight px-2">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight px-2 pb-2">
             Let's Build Something Amazing
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
