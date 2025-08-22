@@ -53,8 +53,8 @@ const Contact = () => {
     },
     {
       name: "GitHub",
-      value: "github.com/eranhaim",
-      href: "https://github.com/eranhaim",
+      value: "github.com/eranos12",
+      href: "https://github.com/eranos12",
       icon: "🐙",
       color: "from-gray-700 to-gray-800",
       bgColor: "bg-gray-700/20",
