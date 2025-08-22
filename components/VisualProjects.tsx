@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { projects, getProjectsByTag } from "@/lib/projects";
 import { ExternalLink, Play, Sparkles, Image as ImageIcon } from "lucide-react";
+import Image from "next/image";
 
 const VisualProjects = () => {
   const [selectedTag, setSelectedTag] = useState<string>("all");
@@ -13,45 +14,45 @@ const VisualProjects = () => {
     ? projects 
     : getProjectsByTag(selectedTag);
 
-  // Project images with fallbacks - using gradient backgrounds as placeholders
+  // Project images - using actual uploaded screenshots
   const getProjectImage = (projectId: string) => {
-    const imageMap: { [key: string]: { bg: string, text: string, accent: string } } = {
+    const imageMap: { [key: string]: { src: string, alt: string, fallback: string } } = {
       "ai-resume-ranker": { 
-        bg: "from-purple-500 to-blue-600", 
-        text: "AI Resume Ranker",
-        accent: "from-purple-400 to-blue-500"
+        src: "/images/projects/Resume Ranker.png", 
+        alt: "AI Resume Ranker Screenshot",
+        fallback: "AI Resume Ranker"
       },
       "image-generator": { 
-        bg: "from-emerald-500 to-teal-600", 
-        text: "AI Image Generator",
-        accent: "from-emerald-400 to-teal-500"
+        src: "/images/projects/Image Gen.png", 
+        alt: "AI Image Generator Screenshot",
+        fallback: "AI Image Generator"
       },
       "ecommerce-store": { 
-        bg: "from-orange-500 to-red-600", 
-        text: "E-commerce Store",
-        accent: "from-orange-400 to-red-500"
+        src: "/images/projects/Ecom store.png", 
+        alt: "E-commerce Store Screenshot",
+        fallback: "E-commerce Store"
       },
       "ai-chatbot": { 
-        bg: "from-indigo-500 to-purple-600", 
-        text: "AI Chatbot",
-        accent: "from-indigo-400 to-purple-500"
+        src: "/images/projects/AI CHAT BOT.png", 
+        alt: "AI Chatbot Screenshot",
+        fallback: "AI Chatbot"
       },
       "analytics-dashboard": { 
-        bg: "from-blue-500 to-indigo-600", 
-        text: "Analytics Dashboard",
-        accent: "from-blue-400 to-indigo-500"
+        src: "/images/projects/Analytics Dashboard.png", 
+        alt: "Analytics Dashboard Screenshot",
+        fallback: "Analytics Dashboard"
       },
       "ai-data-analyzer": { 
-        bg: "from-pink-500 to-rose-600", 
-        text: "AI Data Analyzer",
-        accent: "from-pink-400 to-rose-500"
+        src: "/images/projects/AI data analyzer.png", 
+        alt: "AI Data Analyzer Screenshot",
+        fallback: "AI Data Analyzer"
       }
     };
 
     return imageMap[projectId] || { 
-      bg: "from-gray-500 to-gray-600", 
-      text: "Project",
-      accent: "from-gray-400 to-gray-500"
+      src: "/images/projects/default.jpg", 
+      alt: "Project Screenshot",
+      fallback: "Project"
     };
   };
 
@@ -98,23 +99,32 @@ const VisualProjects = () => {
               >
                 {/* Project Image */}
                 <div className="relative h-48 overflow-hidden">
-                  {/* Gradient Background as Project Image */}
-                  <div className={`w-full h-full bg-gradient-to-br ${projectImage.bg} flex items-center justify-center relative`}>
-                    {/* Project Icon */}
-                    <div className="text-white text-6xl opacity-80 group-hover:opacity-100 transition-opacity duration-300">
-                      {project.id === "ai-resume-ranker" && "📄"}
-                      {project.id === "image-generator" && "🎨"}
-                      {project.id === "ecommerce-store" && "🛒"}
-                      {project.id === "ai-chatbot" && "🤖"}
-                      {project.id === "analytics-dashboard" && "📊"}
-                      {project.id === "ai-data-analyzer" && "🧠"}
-                    </div>
+                  {/* Try to load actual screenshot, fallback to placeholder */}
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={projectImage.src}
+                      alt={projectImage.alt}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      onError={(e) => {
+                        // If image fails to load, show fallback
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        const fallback = target.nextElementSibling as HTMLElement;
+                        if (fallback) fallback.style.display = 'flex';
+                      }}
+                    />
                     
-                    {/* Project Name Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
-                      <h3 className="text-white font-bold text-lg text-center">
-                        {projectImage.text}
-                      </h3>
+                    {/* Fallback placeholder */}
+                    <div 
+                      className="absolute inset-0 bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center text-white text-center p-4"
+                      style={{ display: 'none' }}
+                    >
+                      <div>
+                        <ImageIcon className="w-12 h-12 mx-auto mb-2 opacity-60" />
+                        <p className="text-sm font-medium">{projectImage.fallback}</p>
+                        <p className="text-xs opacity-60 mt-1">Screenshot not available</p>
+                      </div>
                     </div>
                   </div>
                   
