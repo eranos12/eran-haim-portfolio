@@ -39,80 +39,42 @@ const Header = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Enhanced Logo */}
+          {/* Revolutionary AI Neural Network Logo */}
           <div className="flex items-center space-x-3">
             <div className="relative group">
-              {/* Main Logo Container */}
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 via-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-2xl shadow-purple-500/30 relative overflow-hidden">
-                {/* Animated Background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                
-                {/* Glowing Effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 animate-pulse"></div>
-                
-                {/* AI Circuit Pattern Background */}
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-1 left-1 w-1 h-1 bg-cyan-400 rounded-full animate-ping"></div>
-                  <div className="absolute top-1 right-1 w-1 h-1 bg-purple-400 rounded-full animate-ping delay-200"></div>
-                  <div className="absolute bottom-1 left-1 w-1 h-1 bg-blue-400 rounded-full animate-ping delay-400"></div>
-                  <div className="absolute bottom-1 right-1 w-1 h-1 bg-cyan-400 rounded-full animate-ping delay-600"></div>
-                  
-                  {/* Circuit Lines */}
-                  <div className="absolute top-2 left-2 w-2 h-0.5 bg-gradient-to-r from-cyan-400 to-transparent"></div>
-                  <div className="absolute top-2 right-2 w-2 h-0.5 bg-gradient-to-l from-purple-400 to-transparent"></div>
-                  <div className="absolute bottom-2 left-2 w-2 h-0.5 bg-gradient-to-r from-blue-400 to-transparent"></div>
-                  <div className="absolute bottom-2 right-2 w-2 h-0.5 bg-gradient-to-l from-cyan-400 to-transparent"></div>
-                </div>
-                
-                {/* Central Logo Elements */}
-                <div className="relative z-10 flex items-center justify-center">
-                  {/* Main Letter E with enhanced styling */}
-                  <span className="text-white font-black text-2xl group-hover:scale-110 transition-transform duration-300 relative">
-                    E
-                    {/* Glow effect on E */}
-                    <div className="absolute inset-0 bg-white blur-sm opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  </span>
-                  
-                  {/* Floating AI Elements */}
-                  <div className="absolute -top-1 -right-1 w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full opacity-0 group-hover:opacity-100 animate-bounce transition-all duration-500">
-                    <div className="w-full h-full bg-white rounded-full animate-ping"></div>
-                  </div>
-                  
-                  <div className="absolute -bottom-1 -left-1 w-1.5 h-1.5 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-0 group-hover:opacity-100 animate-bounce delay-300 transition-all duration-500">
-                    <div className="w-full h-full bg-white rounded-full animate-ping delay-300"></div>
-                  </div>
-                  
-                  {/* Tech Icons */}
-                  <div className="absolute top-0 left-0 w-3 h-3 text-xs opacity-0 group-hover:opacity-100 transition-all duration-500 animate-spin">
-                    ⚛️
-                  </div>
-                  <div className="absolute top-0 right-0 w-3 h-3 text-xs opacity-0 group-hover:opacity-100 transition-all duration-500 animate-spin delay-200">
-                    🚀
-                  </div>
-                  <div className="absolute bottom-0 left-0 w-3 h-3 text-xs opacity-0 group-hover:opacity-100 transition-all duration-500 animate-spin delay-400">
-                    ⚡
-                  </div>
-                  <div className="absolute bottom-0 right-0 w-3 h-3 text-xs opacity-0 group-hover:opacity-100 transition-all duration-500 animate-spin delay-600">
-                    🎯
-                  </div>
-                </div>
-                
-                {/* Corner accents with tech theme */}
-                <div className="absolute top-0 left-0 w-3 h-3 bg-gradient-to-br from-purple-400 via-blue-400 to-cyan-400 rounded-tl-2xl opacity-80"></div>
-                <div className="absolute bottom-0 right-0 w-3 h-3 bg-gradient-to-tl from-cyan-400 via-blue-400 to-purple-400 rounded-br-2xl opacity-80"></div>
-                
-                {/* Animated border */}
-                <div className="absolute inset-0 rounded-2xl border-2 border-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 bg-clip-border opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
-              
-              {/* Hover ring effect */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-20 blur transition-opacity duration-500"></div>
-              
-              {/* Floating particles around logo */}
-              <div className="absolute -top-2 -right-2 w-1 h-1 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-500"></div>
-              <div className="absolute -bottom-2 -left-2 w-1 h-1 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping delay-300 transition-opacity duration-500"></div>
-              <div className="absolute -top-2 -left-2 w-1 h-1 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping delay-600 transition-opacity duration-500"></div>
-              <div className="absolute -bottom-2 -right-2 w-1 h-1 bg-pink-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping delay-900 transition-opacity duration-500"></div>
+                             {/* Main Logo - AI Neural Network Concept */}
+               <div className="w-14 h-14 relative">
+                 {/* Central Node - Letter E */}
+                 <div className="w-8 h-8 bg-gradient-to-br from-purple-500 via-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/50 relative z-20 group-hover:scale-110 transition-transform duration-300 mx-auto mt-3">
+                   <span className="text-white font-black text-lg">E</span>
+                 </div>
+                 
+                 {/* Neural Network Nodes */}
+                 <div className="absolute inset-0 flex items-center justify-center">
+                   {/* Top Node */}
+                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full opacity-80 animate-pulse"></div>
+                   
+                   {/* Bottom Node */}
+                   <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-80 animate-pulse delay-300"></div>
+                   
+                   {/* Left Node */}
+                   <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-80 animate-pulse delay-200"></div>
+                   
+                   {/* Right Node */}
+                   <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-gradient-to-r from-cyan-400 to-green-400 rounded-full opacity-80 animate-pulse delay-400"></div>
+                 </div>
+                 
+                 {/* Simple Connections */}
+                 <svg className="absolute inset-0 w-full h-full" viewBox="0 0 56 56">
+                   <line x1="28" y1="28" x2="28" y2="8" stroke="#06b6d4" strokeWidth="1" opacity="0.6"/>
+                   <line x1="28" y1="28" x2="28" y2="48" stroke="#8b5cf6" strokeWidth="1" opacity="0.6"/>
+                   <line x1="28" y1="28" x2="8" y2="28" stroke="#3b82f6" strokeWidth="1" opacity="0.6"/>
+                   <line x1="28" y1="28" x2="48" y2="28" stroke="#06b6d4" strokeWidth="1" opacity="0.6"/>
+                 </svg>
+                 
+                 {/* Hover Glow */}
+                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-cyan-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg"></div>
+               </div>
             </div>
             
             {/* Enhanced Name with gradient and glow */}

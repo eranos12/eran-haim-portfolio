@@ -70,44 +70,64 @@ export const projects: Project[] = [
     link: "/ecommerce-store",
     source: "https://github.com/eranhaim/ecommerce-store"
   },
-  {
-    id: "ai-chatbot",
-    title: "AI Chatbot Assistant",
-    description: "Intelligent conversational AI chatbot with context awareness and multi-language support.",
-    image: "/api/placeholder/600/400",
-    tags: ["AI/ML", "Chatbot", "NLP", "Conversational AI", "Next.js"],
-    year: "2025",
-    featured: false,
-    technologies: ["Next.js", "TypeScript", "OpenAI GPT", "WebSocket", "Tailwind CSS"],
-    highlights: [
-      "Context-aware conversations",
-      "Multi-language support",
-      "Sentiment analysis",
-      "Real-time chat interface",
-      "Conversation history management"
-    ],
-    link: "/ai-chatbot",
-    source: "https://github.com/eranhaim/ai-chatbot"
-  },
-  {
-    id: "ai-data-analyzer",
-    title: "AI Data Analyzer",
-    description: "Intelligent data analysis and visualization platform with AI-powered insights and reporting.",
-    image: "/api/placeholder/600/400",
-    tags: ["AI/ML", "Data Analysis", "Visualization", "Analytics", "Next.js"],
-    year: "2025",
-    featured: false,
-    technologies: ["Next.js", "TypeScript", "Chart.js", "AI Models", "Data Processing"],
-    highlights: [
-      "AI-powered pattern recognition",
-      "Interactive data visualizations",
-      "Automated insight generation",
-      "Multiple data format support",
-      "Export and reporting tools"
-    ],
-    link: "/ai-data-analyzer",
-    source: "https://github.com/eranhaim/ai-data-analyzer"
-  }
+  
+                {
+                id: "ai-chatbot",
+                title: "AI Chatbot for Businesses",
+                description: "Professional AI-powered customer service chatbot with FAQ handling and human fallback.",
+                image: "/api/placeholder/600/400",
+                tags: ["AI/ML", "Chatbot", "Customer Service", "Business", "Next.js"],
+                year: "2025",
+                featured: true,
+                technologies: ["Next.js", "TypeScript", "Tailwind CSS", "AI Integration", "Real-time Chat"],
+                highlights: [
+                  "Smart FAQ handling and responses",
+                  "Human support fallback system",
+                  "Customizable business branding",
+                  "Chat export and analytics",
+                  "24/7 automated customer service"
+                ],
+                link: "/ai-chatbot",
+                source: "https://github.com/eranhaim/ai-chatbot"
+              },
+                             {
+                 id: "analytics-dashboard",
+                 title: "Analytics Dashboard with AI Insights",
+                 description: "Professional business intelligence platform with AI-powered analytics, data visualization, and automated insights.",
+                 image: "/api/placeholder/600/400",
+                 tags: ["AI/ML", "Data Analysis", "Business Intelligence", "Analytics", "Dashboard"],
+                 year: "2025",
+                 featured: true,
+                 technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Chart.js", "AI Integration"],
+                 highlights: [
+                   "AI-powered business insights and recommendations",
+                   "Interactive data visualizations and charts",
+                   "Multi-format data upload (CSV, Excel, JSON)",
+                   "Real-time analytics and reporting",
+                   "Export functionality and automated insights"
+                 ],
+                 link: "/analytics-dashboard",
+                 source: "https://github.com/eranhaim/analytics-dashboard"
+               },
+                               {
+                  id: "ai-data-analyzer",
+                  title: "AI Data Analyzer",
+                  description: "Advanced neural network-powered data intelligence platform with real-time pattern recognition, anomaly detection, and predictive analytics.",
+                  image: "/api/placeholder/600/400",
+                  tags: ["AI/ML", "Neural Networks", "Data Intelligence", "Pattern Recognition", "Next.js"],
+                  year: "2025",
+                  featured: true,
+                  technologies: ["Next.js", "TypeScript", "Neural Networks", "AI Models", "Real-time Analytics"],
+                  highlights: [
+                    "Live neural network visualization",
+                    "Real-time anomaly detection",
+                    "AI-powered pattern recognition",
+                    "Predictive analytics engine",
+                    "Advanced data streaming capabilities"
+                  ],
+                  link: "/ai-data-analyzer",
+                  source: "https://github.com/eranhaim/ai-data-analyzer"
+                }
 ];
 
 export const getFeaturedProjects = (): Project[] => {

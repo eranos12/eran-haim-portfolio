@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, ShoppingCart, Heart, Star, Search, Filter, Grid, List, ChevronDown, Plus, Minus, Eye, Share2, Truck, Shield, RefreshCw, CreditCard, Package, Users, TrendingUp } from "lucide-react";
+import { ArrowLeft, ShoppingCart, Heart, Star, Search, Filter, Grid, List, ChevronDown, Plus, Minus, Eye, Share2, Truck, Shield, RefreshCw, CreditCard, Package, Users, TrendingUp, Brain, Cpu } from "lucide-react";
 
 interface Product {
   id: string;
@@ -567,6 +567,27 @@ export default function EcommerceStorePage() {
           </p>
         </div>
       </footer>
+
+      {/* Footer - Created by Eran Haim */}
+      <div className="text-center py-8 border-t border-orange-500/20">
+        <div className="flex items-center justify-center space-x-3 text-orange-300">
+          <div className="w-6 h-6 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center">
+            <Brain className="w-3 h-3 text-white" />
+          </div>
+          <span className="text-sm font-medium">
+            Created by{" "}
+            <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent font-semibold">
+              Eran Haim
+            </span>
+          </span>
+          <div className="w-6 h-6 bg-gradient-to-br from-red-500 to-pink-500 rounded-full flex items-center justify-center">
+            <Cpu className="w-3 h-3 text-white" />
+          </div>
+        </div>
+        <p className="text-xs text-orange-400/70 mt-2">
+          AI Integration & Full-Stack Developer
+        </p>
+      </div>
     </main>
   );
 }

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Upload, FileText, Target, Sparkles, Users, TrendingUp, Trophy, CheckCircle, XCircle, ChevronDown, ChevronUp, X, Briefcase, Search, Zap, Brain, BarChart3 } from "lucide-react";
+import { ArrowLeft, Upload, FileText, Target, Sparkles, Users, TrendingUp, Trophy, CheckCircle, XCircle, ChevronDown, ChevronUp, X, Briefcase, Search, Zap, Brain, BarChart3, Cpu } from "lucide-react";
 
 interface Resume {
   id: string;
@@ -525,6 +525,27 @@ export default function ResumeRankerPage() {
           </p>
         </div>
       </footer>
+
+      {/* Footer - Created by Eran Haim */}
+      <div className="text-center py-8 border-t border-purple-500/20">
+        <div className="flex items-center justify-center space-x-3 text-purple-300">
+          <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+            <Brain className="w-3 h-3 text-white" />
+          </div>
+          <span className="text-sm font-medium">
+            Created by{" "}
+            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-semibold">
+              Eran Haim
+            </span>
+          </span>
+          <div className="w-6 h-6 bg-gradient-to-br from-pink-500 to-blue-500 rounded-full flex items-center justify-center">
+            <Cpu className="w-3 h-3 text-white" />
+          </div>
+        </div>
+        <p className="text-xs text-purple-400/70 mt-2">
+          AI Integration & Full-Stack Developer
+        </p>
+      </div>
     </main>
   );
 }

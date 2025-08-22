@@ -138,40 +138,39 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
             <div className="relative group">
-              {/* Enhanced Footer Logo */}
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 via-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/25 relative overflow-hidden">
-                {/* Animated Background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                
-                {/* Glowing Effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500 animate-pulse"></div>
-                
-                {/* AI Circuit Pattern Background */}
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-1 left-1 w-1 h-1 bg-cyan-400 rounded-full animate-ping"></div>
-                  <div className="absolute top-1 right-1 w-1 h-1 bg-purple-400 rounded-full animate-ping delay-200"></div>
-                  <div className="absolute bottom-1 left-1 w-1 h-1 bg-blue-400 rounded-full animate-ping delay-400"></div>
-                  <div className="absolute bottom-1 right-1 w-1 h-1 bg-cyan-400 rounded-full animate-ping delay-600"></div>
-                  
-                  {/* Circuit Lines */}
-                  <div className="absolute top-1.5 left-1.5 w-1.5 h-0.5 bg-gradient-to-r from-cyan-400 to-transparent"></div>
-                  <div className="absolute top-1.5 right-1.5 w-1.5 h-0.5 bg-gradient-to-l from-purple-400 to-transparent"></div>
-                  <div className="absolute bottom-1.5 left-1.5 w-1.5 h-0.5 bg-gradient-to-r from-blue-400 to-transparent"></div>
-                  <div className="absolute bottom-1.5 right-1.5 w-1.5 h-0.5 bg-gradient-to-l from-cyan-400 to-transparent"></div>
+              {/* Neural Network Footer Logo */}
+              <div className="w-10 h-10 relative">
+                {/* Central Node - Letter E */}
+                <div className="w-6 h-6 bg-gradient-to-br from-purple-500 via-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/50 relative z-20 group-hover:scale-110 transition-transform duration-300 mx-auto mt-2">
+                  <span className="text-white font-black text-sm">E</span>
                 </div>
                 
-                {/* Letter E */}
-                <span className="text-white font-black text-lg relative z-10 group-hover:scale-110 transition-transform duration-300">
-                  E
-                </span>
+                {/* Neural Network Nodes */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Top Node */}
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full opacity-80 animate-pulse"></div>
+                  
+                  {/* Bottom Node */}
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-80 animate-pulse delay-300"></div>
+                  
+                  {/* Left Node */}
+                  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-80 animate-pulse delay-200"></div>
+                  
+                  {/* Right Node */}
+                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-gradient-to-r from-cyan-400 to-green-400 rounded-full opacity-80 animate-pulse delay-400"></div>
+                </div>
                 
-                {/* Corner accents */}
-                <div className="absolute top-0 left-0 w-2 h-2 bg-gradient-to-br from-purple-400 via-blue-400 to-cyan-400 rounded-tl-xl opacity-80"></div>
-                <div className="absolute bottom-0 right-0 w-2 h-2 bg-gradient-to-tl from-cyan-400 via-blue-400 to-purple-400 rounded-br-xl opacity-80"></div>
+                {/* Simple Connections */}
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 40 40">
+                  <line x1="20" y1="20" x2="20" y2="5" stroke="#06b6d4" strokeWidth="1" opacity="0.6"/>
+                  <line x1="20" y1="20" x2="20" y2="35" stroke="#8b5cf6" strokeWidth="1" opacity="0.6"/>
+                  <line x1="20" y1="20" x2="5" y2="20" stroke="#3b82f6" strokeWidth="1" opacity="0.6"/>
+                  <line x1="20" y1="20" x2="35" y2="20" stroke="#06b6d4" strokeWidth="1" opacity="0.6"/>
+                </svg>
+                
+                {/* Hover Glow */}
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-cyan-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg"></div>
               </div>
-              
-              {/* Hover ring effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 rounded-xl opacity-0 group-hover:opacity-20 blur transition-opacity duration-500"></div>
             </div>
             <span className="text-lg font-semibold text-white">Eran Haim</span>
           </div>

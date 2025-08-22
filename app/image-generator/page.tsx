@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Image, Sparkles, Download, Share2, Heart, RefreshCw, Palette, Zap, Eye, Settings, Wand2, Camera, Layers } from "lucide-react";
+import { ArrowLeft, Image, Sparkles, Download, Share2, Heart, RefreshCw, Palette, Zap, Eye, Settings, Wand2, Camera, Layers, Brain, Cpu } from "lucide-react";
 
 interface GeneratedImage {
   id: string;
@@ -375,6 +375,27 @@ export default function ImageGeneratorPage() {
           </p>
         </div>
       </footer>
+
+      {/* Footer - Created by Eran Haim */}
+      <div className="text-center py-8 border-t border-emerald-500/20">
+        <div className="flex items-center justify-center space-x-3 text-emerald-300">
+          <div className="w-6 h-6 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
+            <Brain className="w-3 h-3 text-white" />
+          </div>
+          <span className="text-sm font-medium">
+            Created by{" "}
+            <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent font-semibold">
+              Eran Haim
+            </span>
+          </span>
+          <div className="w-6 h-6 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-full flex items-center justify-center">
+            <Cpu className="w-3 h-3 text-white" />
+          </div>
+        </div>
+        <p className="text-xs text-emerald-400/70 mt-2">
+          AI Integration & Full-Stack Developer
+        </p>
+      </div>
     </main>
   );
 }
