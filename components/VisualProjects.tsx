@@ -18,32 +18,32 @@ const VisualProjects = () => {
   const getProjectImage = (projectId: string) => {
     const imageMap: { [key: string]: { src: string, alt: string, fallback: string } } = {
       "ai-resume-ranker": { 
-        src: "/images/projects/Resume Ranker.png", 
+        src: "/images/projects/ResumeRanker.png", 
         alt: "AI Resume Ranker Screenshot",
         fallback: "AI Resume Ranker"
       },
       "image-generator": { 
-        src: "/images/projects/Image Gen.png", 
+        src: "/images/projects/ImageGen.png", 
         alt: "AI Image Generator Screenshot",
         fallback: "AI Image Generator"
       },
       "ecommerce-store": { 
-        src: "/images/projects/Ecom store.png", 
+        src: "/images/projects/EcomStore.png", 
         alt: "E-commerce Store Screenshot",
         fallback: "E-commerce Store"
       },
       "ai-chatbot": { 
-        src: "/images/projects/AI CHAT BOT.png", 
+        src: "/images/projects/AIChatBot.png", 
         alt: "AI Chatbot Screenshot",
         fallback: "AI Chatbot"
       },
       "analytics-dashboard": { 
-        src: "/images/projects/Analytics Dashboard.png", 
+        src: "/images/projects/AnalyticsDashboard.png", 
         alt: "Analytics Dashboard Screenshot",
         fallback: "Analytics Dashboard"
       },
       "ai-data-analyzer": { 
-        src: "/images/projects/AI data analyzer.png", 
+        src: "/images/projects/AIDataAnalyzer.png", 
         alt: "AI Data Analyzer Screenshot",
         fallback: "AI Data Analyzer"
       }
