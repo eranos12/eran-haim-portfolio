@@ -44,8 +44,8 @@ const Contact = () => {
     },
     {
       name: "LinkedIn",
-      value: "linkedin.com/in/eranhaim",
-      href: "https://linkedin.com/in/eranhaim",
+      value: "linkedin.com/in/eran-haim",
+      href: "https://www.linkedin.com/in/eran-haim/",
       icon: "💼",
       color: "from-blue-600 to-blue-700",
       bgColor: "bg-blue-600/20",
