@@ -22,7 +22,7 @@ const VisualProjects = () => {
         alt: "AI Resume Ranker Screenshot",
         fallback: "AI Resume Ranker"
       },
-      "image-generator": { 
+      "ai-image-generator": { 
         src: "/images/projects/ImageGen.png", 
         alt: "AI Image Generator Screenshot",
         fallback: "AI Image Generator"
@@ -87,14 +87,14 @@ const VisualProjects = () => {
         </div>
 
         {/* Visual Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {filteredProjects.map((project, index) => {
             const projectImage = getProjectImage(project.id);
             
             return (
               <div
                 key={project.id}
-                className="group relative overflow-hidden rounded-2xl border border-gray-700 bg-gray-800/20 hover:border-purple-500 transition-all duration-500 hover:scale-105 transform"
+                className="group relative overflow-hidden rounded-2xl border border-gray-700 bg-gray-800/20 hover:border-purple-500 transition-all duration-500 hover:scale-105 transform flex flex-col h-full"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 {/* Project Image */}
@@ -140,39 +140,42 @@ const VisualProjects = () => {
                 </div>
 
                 {/* Project Content */}
-                <div className="p-6">
-                  {/* Header */}
-                  <div className="mb-4">
-                    <div className="flex items-start justify-between mb-3">
-                      <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300">
-                        {project.title}
-                      </h3>
-                      <span className="inline-block px-2 py-1 bg-purple-500/20 text-purple-400 text-xs font-medium rounded-full border border-purple-500/30">
-                        {project.year}
-                      </span>
+                <div className="p-6 flex flex-col flex-grow">
+                  {/* Content that can grow */}
+                  <div className="flex-grow">
+                    {/* Header */}
+                    <div className="mb-4">
+                      <div className="flex items-start justify-between mb-3">
+                        <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300">
+                          {project.title}
+                        </h3>
+                        <span className="inline-block px-2 py-1 bg-purple-500/20 text-purple-400 text-xs font-medium rounded-full border border-purple-500/30">
+                          {project.year}
+                        </span>
+                      </div>
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        {project.description}
+                      </p>
                     </div>
-                    <p className="text-gray-300 text-sm leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
 
-                  {/* Technologies */}
-                  <div className="mb-4">
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.slice(0, 4).map((tech, techIndex) => (
-                        <span
-                          key={tech}
-                          className="px-2 py-1 bg-gray-700/50 text-xs text-gray-300 rounded-md border border-gray-600 hover:border-purple-500 hover:text-purple-400 transition-all duration-300"
-                          style={{ animationDelay: `${(index * 200) + (techIndex * 50)}ms` }}
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                      {project.technologies.length > 4 && (
-                        <span className="px-2 py-1 bg-gray-700/50 text-xs text-gray-300 rounded-md border border-gray-600">
-                          +{project.technologies.length - 4} more
-                        </span>
-                      )}
+                    {/* Technologies */}
+                    <div className="mb-4">
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.slice(0, 4).map((tech, techIndex) => (
+                          <span
+                            key={tech}
+                            className="px-2 py-1 bg-gray-700/50 text-xs text-gray-300 rounded-md border border-gray-600 hover:border-purple-500 hover:text-purple-400 transition-all duration-300"
+                            style={{ animationDelay: `${(index * 200) + (techIndex * 50)}ms` }}
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                        {project.technologies.length > 4 && (
+                          <span className="px-2 py-1 bg-gray-700/50 text-xs text-gray-300 rounded-md border border-gray-600">
+                            +{project.technologies.length - 4} more
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
 
