@@ -3,6 +3,7 @@
 import Header from "@/components/Header";
 import About from "@/components/About";
 import VisualProjects from "@/components/VisualProjects";
+import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 bg-purple-500 rounded-full animate-pulse"
+            className="absolute w-1 h-1 bg-darkBlue-500 rounded-full animate-pulse"
             style={{
               left: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 8}s`,
@@ -30,13 +31,13 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center pt-20">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-20 w-72 h-72 bg-darkBlue-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-96 h-96 bg-darkBlue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute bottom-20 left-1/2 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-500"></div>
           
           {/* Additional floating orbs */}
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-full blur-2xl animate-bounce"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full blur-2xl animate-bounce delay-1000"></div>
+          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-darkBlue-500/30 to-blue-500/30 rounded-full blur-2xl animate-bounce"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-gradient-to-r from-blue-500/30 to-darkBlue-500/30 rounded-full blur-2xl animate-bounce delay-1000"></div>
         </div>
         
         {/* Floating Tech Icons */}
@@ -56,25 +57,24 @@ export default function Home() {
           <div className="space-y-8">
             <div className="relative">
               <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight">
-                <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-darkBlue-400 via-blue-400 to-darkBlue-600 bg-clip-text text-transparent">
                   Eran Haim
                 </span>
               </h1>
-              <div className="absolute -top-4 -right-4 w-4 h-4 bg-purple-500 rounded-full animate-ping"></div>
+              <div className="absolute -top-4 -right-4 w-4 h-4 bg-darkBlue-500 rounded-full animate-ping"></div>
               
               {/* Glowing effect behind name */}
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-400/20 to-purple-600/20 blur-3xl -z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-darkBlue-500/20 via-blue-400/20 to-darkBlue-600/20 blur-3xl -z-10"></div>
             </div>
             
             {/* Animated Subtitle */}
             <div className="space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-300">
-                AI Integration & Full-Stack Developer
+                Website & App Development for Businesses
               </h2>
               <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
-                I build <span className="text-purple-400 font-semibold">AI-powered web apps</span> and 
-                <span className="text-purple-400 font-semibold"> high-quality user experiences</span> that 
-                make a difference.
+                I build <span className="text-darkBlue-400 font-semibold">fast, custom websites</span> for small and large businesses
+                <span className="text-darkBlue-400 font-semibold"> with AI features that generate leads</span> - from 0 to a stunning, live website!
               </p>
             </div>
 
@@ -85,10 +85,10 @@ export default function Home() {
                   const workSection = document.getElementById("work");
                   workSection?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-600 rounded-full text-white font-semibold text-lg shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105 transform"
+                className="group relative px-8 py-4 bg-gradient-to-r from-darkBlue-500 to-blue-600 rounded-full text-white font-semibold text-lg shadow-2xl hover:shadow-darkBlue-500/25 transition-all duration-300 hover:scale-105 transform"
               >
                 <span className="relative z-10">See My Work</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-600 rounded-full blur opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-darkBlue-500 to-blue-600 rounded-full blur opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               
               <button 
@@ -96,7 +96,7 @@ export default function Home() {
                   const contactSection = document.getElementById("contact");
                   contactSection?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="px-8 py-4 border-2 border-purple-500 text-purple-400 rounded-full font-semibold text-lg hover:bg-purple-500 hover:text-white transition-all duration-300 hover:scale-105 transform"
+                className="px-8 py-4 border-2 border-darkBlue-500 text-darkBlue-400 rounded-full font-semibold text-lg hover:bg-darkBlue-500 hover:text-white transition-all duration-300 hover:scale-105 transform"
               >
                 Contact Me
               </button>
@@ -104,10 +104,10 @@ export default function Home() {
 
             {/* Tech Stack Badges */}
             <div className="flex flex-wrap justify-center gap-3 pt-8">
-              {['Next.js', 'TypeScript', 'AI/ML', 'React', 'OpenAI', 'Full-Stack'].map((tech, index) => (
+              {['Fast Development (7 days!)', 'Next.js + AI', 'Business Websites', 'Chatbots', 'SEO & Speed', 'Ongoing Support'].map((tech, index) => (
                 <span 
                   key={tech}
-                  className="px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-full text-sm font-medium text-gray-300 hover:text-purple-400 hover:border-purple-500 transition-all duration-300 hover:scale-110 transform"
+                  className="px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-full text-sm font-medium text-gray-300 hover:text-darkBlue-400 hover:border-darkBlue-500 transition-all duration-300 hover:scale-110 transform"
                 >
                   {tech}
                 </span>
@@ -119,7 +119,7 @@ export default function Home() {
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-gray-600 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-purple-500 rounded-full mt-2 animate-pulse"></div>
+            <div className="w-1 h-3 bg-darkBlue-500 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </section>
@@ -129,6 +129,9 @@ export default function Home() {
 
       {/* Projects Section */}
       <VisualProjects />
+
+      {/* Pricing Section */}
+      <Pricing />
 
       {/* Contact Section */}
       <Contact />

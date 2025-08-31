@@ -27,39 +27,39 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-transparent to-purple-500/5">
+    <section id="about" className="py-20 bg-gradient-to-b from-transparent to-darkBlue-500/5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Bio */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-purple-400 via-blue-400 to-purple-600 bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-darkBlue-400 via-blue-400 to-darkBlue-600 bg-clip-text text-transparent">
                 About Me
               </h2>
               
               <div className="space-y-4">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  I'm Eran Haim, a full-stack developer with expertise in AI integrations. I love taking ideas and turning them into production products with clean, fast user experiences.
+                  I'm Eran Haim, an expert developer specializing in building websites and applications for small and large businesses. I take your business from 0 to a fully functional, stunning website that works online!
                 </p>
                 
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  I focus on Next.js, TypeScript, and cloud solutions. I build intelligent applications that combine AI with modern, professional user experiences.
+                  What do I build? Fast business websites with AI layers that generate leads. Agile development with Next.js, clean user experience, measurement and continuous improvement.
                 </p>
                 
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  With a passion for clean architecture and rapid development, I specialize in building AI-powered web applications that deliver real business value and exceptional user experiences.
+                  Why choose me? I specialize in rapid development (up to 7 working days!), with everything you'll ever need: websites, applications, chatbots, automations and integrations. All in one place.
                 </p>
               </div>
             </div>
 
             {/* Skills Grid */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-purple-400">Technical Skills</h3>
+              <h3 className="text-xl font-semibold text-darkBlue-400">Technical Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill, index) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm text-gray-300 hover:text-purple-400 hover:border-purple-500 transition-all duration-300 hover:scale-105 transform"
+                    className="px-3 py-1 bg-darkBlue-500/20 border border-darkBlue-500/30 rounded-full text-sm text-gray-300 hover:text-darkBlue-400 hover:border-darkBlue-400 transition-all duration-300 hover:scale-105 transform"
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
                     {skill}
@@ -76,13 +76,13 @@ const About = () => {
               {stats.map((stat, index) => (
                 <div
                   key={stat.label}
-                  className="text-center p-6 rounded-2xl bg-purple-500/20 border border-purple-500/30 hover:border-purple-500 transition-all duration-300 hover:scale-105 transform backdrop-blur-sm"
+                  className="text-center p-6 rounded-2xl bg-darkBlue-500/20 border border-darkBlue-500/30 hover:border-darkBlue-400 transition-all duration-300 hover:scale-105 transform backdrop-blur-sm"
                   style={{ animationDelay: `${index * 200}ms` }}
                 >
                   <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
                     {stat.icon}
                   </div>
-                  <div className="text-3xl font-bold text-purple-400 mb-2">
+                  <div className="text-3xl font-bold text-darkBlue-400 mb-2">
                     {stat.number}
                   </div>
                   <div className="text-gray-300 font-medium mb-1">
@@ -97,19 +97,18 @@ const About = () => {
 
             {/* Additional Info */}
             <div className="space-y-6">
-              <div className="p-6 rounded-2xl bg-purple-500/20 border border-purple-500/30 backdrop-blur-sm">
-                <h4 className="text-lg font-semibold text-white mb-3">What I Do</h4>
+              <div className="p-6 rounded-2xl bg-darkBlue-500/20 border border-darkBlue-500/30 backdrop-blur-sm">
+                <h4 className="text-lg font-semibold text-white mb-3">What's Included in Every Website?</h4>
                 <p className="text-gray-300 leading-relaxed">
-                  I specialize in building AI-powered web applications, from intelligent chatbots to data analysis tools. 
-                  Every project focuses on clean code, user experience, and real business value.
+                  Clean design (5–6 section landing page), Next.js + Tailwind, lead forms/WhatsApp integration, basic SEO, analytics, fast browsing, short training and ongoing maintenance.
                 </p>
               </div>
               
               <div className="p-6 rounded-2xl bg-blue-500/20 border border-blue-500/30 backdrop-blur-sm">
-                <h4 className="text-lg font-semibold text-white mb-3">My Approach</h4>
+                <h4 className="text-lg font-semibold text-white mb-3">Why Choose Me?</h4>
                 <p className="text-gray-300 leading-relaxed">
-                  I believe in rapid prototyping, user feedback, and iterative development. 
-                  This approach ensures we build exactly what users need, not just what we think they want.
+                  Agile development up to 7 working days! I love working fast and efficiently, with advanced technologies that deliver results. 
+                  You get a website that works, looks amazing and generates real leads.
                 </p>
               </div>
             </div>

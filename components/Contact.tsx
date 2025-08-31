@@ -29,9 +29,9 @@ const Contact = () => {
       value: "eranwebs@gmail.com",
       href: "mailto:eranwebs@gmail.com",
       icon: "📧",
-      color: "from-blue-500 to-blue-600",
-      bgColor: "bg-blue-500/20",
-      borderColor: "border-blue-500/30"
+      color: "from-darkBlue-500 to-darkBlue-600",
+      bgColor: "bg-darkBlue-500/20",
+      borderColor: "border-darkBlue-500/30"
     },
     {
       name: "WhatsApp",
@@ -63,21 +63,21 @@ const Contact = () => {
   ];
 
   const services = [
-    "AI Integration & Machine Learning",
-    "Full-Stack Web Applications",
-    "Next.js & React Development",
-    "API Development & Integration",
-    "Database Design & Optimization",
-    "Cloud Infrastructure & Deployment"
+    "Website Development for Small & Large Businesses",
+    "Custom Business Applications",
+    "Chatbots & AI Automations",
+    "Integrations with Existing Systems",
+    "Business Websites with AI Lead Generation",
+    "Ongoing Maintenance & Improvement"
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-transparent to-purple-500/10">
+    <section id="contact" className="py-20 bg-gradient-to-b from-transparent to-darkBlue-500/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 overflow-visible">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight px-2 pb-2">
-            <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-darkBlue-400 via-blue-400 to-darkBlue-600 bg-clip-text text-transparent">
               Let's Build Something Amazing
             </span>
           </h2>
@@ -91,24 +91,24 @@ const Contact = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-white">
-                What I Offer
+                Let's Build Your Website!
               </h3>
               <p className="text-lg text-gray-300 leading-relaxed">
-                I specialize in building AI-powered applications and modern web solutions that deliver real business value. From concept to deployment, I handle every aspect of the development process.
+                I specialize in building fast, efficient websites for businesses. From 0 to a fully functional, stunning website that works online - up to 7 working days! With everything you'll need: chatbots, automations and integrations.
               </p>
             </div>
 
             {/* Services List */}
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-purple-400">Services</h4>
+              <h4 className="text-xl font-semibold text-darkBlue-400">Services</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {services.map((service, index) => (
                   <div
                     key={service}
-                    className="flex items-center space-x-3 p-3 rounded-lg bg-purple-500/20 border border-purple-500/30 hover:border-purple-500 transition-all duration-300 hover:scale-105 transform"
+                    className="flex items-center space-x-3 p-3 rounded-lg bg-darkBlue-500/20 border border-darkBlue-500/30 hover:border-darkBlue-400 transition-all duration-300 hover:scale-105 transform"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    <div className="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-darkBlue-400 rounded-full flex-shrink-0"></div>
                     <span className="text-gray-300 text-sm">{service}</span>
                   </div>
                 ))}
@@ -117,7 +117,7 @@ const Contact = () => {
 
             {/* Contact Links */}
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-purple-400">Get In Touch</h4>
+              <h4 className="text-xl font-semibold text-darkBlue-400">Get In Touch</h4>
               <div className="space-y-3">
                 {contactLinks.map((link) => (
                   <a
@@ -198,14 +198,14 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300 resize-none"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-darkBlue-500 focus:ring-2 focus:ring-darkBlue-500/20 transition-all duration-300 resize-none"
                   placeholder="Tell me about your project..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full py-3 px-6 bg-gradient-to-r from-purple-500 to-blue-600 text-white rounded-lg font-semibold hover:from-purple-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 transform shadow-lg hover:shadow-purple-500/25"
+                className="w-full py-3 px-6 bg-gradient-to-r from-darkBlue-500 to-blue-600 text-white rounded-lg font-semibold hover:from-darkBlue-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 transform shadow-lg hover:shadow-darkBlue-500/25"
               >
                 Send Message
               </button>
