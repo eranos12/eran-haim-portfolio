@@ -58,7 +58,7 @@ export default function Home() {
             <div className="relative">
               <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight">
                 <span className="bg-gradient-to-r from-darkBlue-400 via-blue-400 to-darkBlue-600 bg-clip-text text-transparent">
-                  Eran Haim
+                  ערן חיים
                 </span>
               </h1>
               <div className="absolute -top-4 -right-4 w-4 h-4 bg-darkBlue-500 rounded-full animate-ping"></div>
@@ -181,13 +181,13 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-cyan-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg"></div>
               </div>
             </div>
-            <span className="text-lg font-semibold text-white">Eran Haim</span>
+            <span className="text-lg font-semibold text-white">ערן חיים</span>
           </div>
           <p className="text-gray-300 mb-4">
-            AI Integration & Full-Stack Developer
+            מפתח אתרים ואפליקציות עם שילוב AI
           </p>
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Eran Haim. All rights reserved.
+            © {new Date().getFullYear()} ערן חיים. כל הזכויות שמורות.
           </p>
         </div>
       </footer>
