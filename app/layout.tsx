@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="he" dir="rtl" className="scroll-smooth font-hebrew">
+    <html lang="he" className="scroll-smooth font-hebrew">
       <head>
         {/* JSON-LD Structured Data */}
         <script

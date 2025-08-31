@@ -8,7 +8,7 @@ import Contact from "@/components/he/Contact";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-navy-900 text-white overflow-hidden">
+    <main className="min-h-screen bg-navy-900 text-white overflow-hidden" dir="rtl">
       {/* Header Navigation */}
       <Header />
 
@@ -56,8 +56,8 @@ export default function Home() {
           {/* Main Title with Gradient and Animation */}
           <div className="space-y-8">
             <div className="relative">
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight">
-                <span className="bg-gradient-to-r from-darkBlue-400 via-blue-400 to-darkBlue-600 bg-clip-text text-transparent">
+              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight">
+                <span className="bg-gradient-to-r from-darkBlue-400 via-blue-400 to-darkBlue-600 bg-clip-text text-transparent" style={{fontFamily: '"Noto Sans Hebrew", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif', fontWeight: '900'}}>
                   ערן חיים
                 </span>
               </h1>
@@ -73,7 +73,7 @@ export default function Home() {
                 בניית אתרים ואפליקציות לעסקים
               </h2>
               <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
-                <span className="text-darkBlue-400 font-semibold">אני בונה אתרי אינטרנט מהירים ומותאמים לעסקים קטנים וגדולים עם שילוב של AI שמביא לידים</span> - מ-0 ועד אתר שעובד ונראה מדהים!
+                <span className="text-darkBlue-400 font-semibold">בניית אתרי אינטרנט מהירים ומותאמים לעסקים קטנים וגדולים עם שילוב של AI שמביא תוצאות</span>- מ-0 ועד אתר שעובד ונראה מדהים!
               </p>
             </div>
 
@@ -86,7 +86,7 @@ export default function Home() {
                 }}
                 className="group relative px-8 py-4 bg-gradient-to-r from-darkBlue-500 to-blue-600 rounded-full text-white font-semibold text-lg shadow-2xl hover:shadow-darkBlue-500/25 transition-all duration-300 hover:scale-105 transform"
               >
-                <span className="relative z-10">ראה את העבודות שלי</span>
+                <span className="relative z-10">עבודות קודמות</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-darkBlue-500 to-blue-600 rounded-full blur opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               

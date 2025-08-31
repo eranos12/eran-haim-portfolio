@@ -41,23 +41,14 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Hebrew Language Switch */}
-          <div className="flex items-center space-x-4">
-                      <a
-            href="/"
-            className="text-sm text-darkBlue-300 hover:text-white transition-colors duration-200 border border-darkBlue-600 px-3 py-1 rounded-full hover:border-darkBlue-400"
-          >
-            עברית
-          </a>
-          </div>
-
-          {/* Revolutionary AI Neural Network Logo */}
-          <div className="flex items-center space-x-3 mr-auto ml-6">
+            {/* Revolutionary AI Neural Network Logo */}
+          <div className="flex items-center space-x-3">
             <div className="relative group">
                              {/* Main Logo - AI Neural Network Concept */}
                <div className="w-14 h-14 relative">
                  {/* Central Node - Letter E */}
                  <div className="w-8 h-8 bg-gradient-to-br from-darkBlue-600 via-darkBlue-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg shadow-darkBlue-500/50 relative z-20 group-hover:scale-110 transition-transform duration-300 mx-auto mt-3">
-                   <span className="text-white font-black text-lg">E</span>
+                   <span className="text-white font-bold text-base">E</span>
                  </div>
                  
                  {/* Neural Network Nodes */}
@@ -128,8 +119,16 @@ const Header = () => {
               {/* Dropdown Menu */}
               <div className="absolute right-0 mt-2 w-64 bg-gray-800/95 backdrop-blur-xl border border-darkBlue-600/30 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="p-4 space-y-3">
+                  <div
+                    onClick={() => {
+                      const pricingSection = document.getElementById("pricing");
+                      pricingSection?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                    className="text-sm text-gray-300 hover:text-darkBlue-400 transition-colors duration-200 cursor-pointer"
+                  >
+                    Website Development
+                  </div>
                   {[
-                    "Website Development",
                     "App Development", 
                     "Fast Development (7 days!)",
                     "Chatbots & AI",
@@ -138,6 +137,10 @@ const Header = () => {
                   ].map((service, index) => (
                     <div
                       key={service}
+                      onClick={() => {
+                        const contactSection = document.getElementById("contact");
+                        contactSection?.scrollIntoView({ behavior: "smooth" });
+                      }}
                       className="text-sm text-gray-300 hover:text-darkBlue-400 transition-colors duration-200 cursor-pointer"
                     >
                       {service}
@@ -146,6 +149,14 @@ const Header = () => {
                 </div>
               </div>
             </div>
+            
+            {/* Language Switch */}
+            <a
+              href="/"
+              className="text-sm text-darkBlue-300 hover:text-white transition-colors duration-200 border border-darkBlue-600 px-3 py-1 rounded-full hover:border-darkBlue-400"
+            >
+              עברית
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}

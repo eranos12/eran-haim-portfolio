@@ -1,13 +1,13 @@
 const About = () => {
   const stats = [
     {
-      number: "5+",
+      number: "2+",
       label: "Years Coding",
       description: "Professional experience",
       icon: "💻"
     },
     {
-      number: "50+",
+      number: "15+",
       label: "Projects Built",
       description: "From concept to production",
       icon: "🚀"

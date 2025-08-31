@@ -47,7 +47,7 @@ const Header = () => {
               <div className="w-14 h-14 relative">
                 {/* Central Node - Letter E */}
                 <div className="w-8 h-8 bg-gradient-to-br from-darkBlue-600 via-darkBlue-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg shadow-darkBlue-500/50 relative z-20 group-hover:scale-110 transition-transform duration-300 mx-auto mt-3">
-                  <span className="text-white font-black text-lg">ע</span>
+                  <span className="text-white font-bold text-base">ע</span>
                 </div>
                 
                 {/* Neural Network Nodes */}
@@ -80,7 +80,7 @@ const Header = () => {
             
             {/* Enhanced Name with gradient and glow */}
             <div className="relative">
-              <span className="text-xl font-bold bg-gradient-to-r from-white via-darkBlue-100 to-blue-100 bg-clip-text text-transparent group-hover:from-darkBlue-200 group-hover:to-blue-200 transition-all duration-300">
+              <span className="text-xl font-bold text-white group-hover:text-darkBlue-200 transition-all duration-300">
                 ערן חיים
               </span>
               {/* Subtle glow behind name */}
@@ -118,8 +118,16 @@ const Header = () => {
               {/* Dropdown Menu */}
               <div className="absolute left-0 mt-2 w-64 bg-gray-800/95 backdrop-blur-xl border border-darkBlue-600/30 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="p-4 space-y-3">
+                  <div
+                    onClick={() => {
+                      const pricingSection = document.getElementById("pricing");
+                      pricingSection?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                    className="text-sm text-gray-300 hover:text-darkBlue-400 transition-colors duration-200 text-right cursor-pointer"
+                  >
+                    בניית אתרים
+                  </div>
                   {[
-                    "בניית אתרים",
                     "בניית אפליקציות", 
                     "פיתוח מהיר (7 ימים!)",
                     "צ'אטבוטים & AI",
@@ -128,6 +136,10 @@ const Header = () => {
                   ].map((service, index) => (
                     <div
                       key={service}
+                      onClick={() => {
+                        const contactSection = document.getElementById("contact");
+                        contactSection?.scrollIntoView({ behavior: "smooth" });
+                      }}
                       className="text-sm text-gray-300 hover:text-darkBlue-400 transition-colors duration-200 text-right cursor-pointer"
                     >
                       {service}
