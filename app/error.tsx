@@ -16,7 +16,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-navy-900 via-darkBlue-900 to-navy-900 flex items-center justify-center px-4">
       <div className="max-w-md w-full text-center">
         <div className="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-red-500/30">
           <AlertTriangle className="w-10 h-10 text-red-400" />
@@ -33,7 +33,7 @@ export default function Error({
         <div className="space-y-4">
           <button
             onClick={reset}
-            className="w-full py-3 px-6 bg-gradient-to-r from-purple-500 to-blue-600 text-white rounded-lg font-medium hover:from-purple-600 hover:to-blue-700 transition-all duration-300 flex items-center justify-center space-x-2"
+            className="w-full py-3 px-6 bg-gradient-to-r from-darkBlue-500 to-blue-600 text-white rounded-lg font-medium hover:from-darkBlue-600 hover:to-blue-700 transition-all duration-300 flex items-center justify-center space-x-2"
           >
             <RefreshCw className="w-5 h-5" />
             <span>Try again</span>
