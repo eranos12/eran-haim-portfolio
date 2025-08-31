@@ -1,14 +1,14 @@
 const About = () => {
   const stats = [
     {
-      number: "5+",
-      label: "שנות קוד",
+              number: "2+",
+        label: "שנות קוד",
       description: "ניסיון מקצועי",
       icon: "💻"
     },
     {
-      number: "50+",
-      label: "פרויקטים שנבנו",
+              number: "15+",
+        label: "פרויקטים שנבנו",
       description: "מרעיון ועד יצור",
       icon: "🚀"
     },
@@ -84,15 +84,15 @@ const About = () => {
               
               <div className="space-y-4">
                 <p className="text-lg text-gray-300 leading-relaxed text-right">
-                  אני ערן חיים, מפתח מומחה בבניית אתרי אינטרנט ואפליקציות לעסקים קטנים וגדולים. אני לוקח את העסק שלכם מ-0 ועד אתר מלא שעובד באוויר ונראה מדהים!
+                  אני ערן חיים, מפתח שמתמחה בבניית אתרי אינטרנט ואפליקציות לעסקים קטנים וגדולים. אני אקח את העסק שלכם מ-0 ועד אתר מלא שעובד באוויר ונראה מדהים!
                 </p>
                 
                 <p className="text-lg text-gray-300 leading-relaxed text-right">
-                  מה אני בונה? אתרי תדמית מהירים עם שכבת AI שמביאה לידים. פיתוח זריז ב-Next.js, חוויית משתמש נקייה, מדידה ושיפור מתמשך.
+                  מה אני בונה? אתרי תדמית מהירים עם שילוב של במידת הצורך AI שיזרים אליכם לידים בכמויות שלא הכרתם. פיתוח מהיר מאוד, חוויית משתמש נקייה, מדידה ושיפור מתמשך.
                 </p>
                 
                 <p className="text-lg text-gray-300 leading-relaxed text-right">
-                  למה איתי? כי אני מתמחה בפיתוח מהיר (עד 7 ימי עבודה!), עם כל מה שאי פעם תצטרכו: אתרים, אפליקציות, צ'אטבוטים, אוטומציות ואינטגרציות. הכל במקום אחד.
+                  למה איתי? כי אני מתמחה בפיתוח מהיר (עד 7 ימי עבודה!), עם כל מה שאי פעם תצטרכו בישביל האתר המושלם שלכם: אתרים, אפליקציות, צ'אטבוטים, אוטומציות ואינטגרציות. הכל במקום אחד.
                 </p>
               </div>
             </div>

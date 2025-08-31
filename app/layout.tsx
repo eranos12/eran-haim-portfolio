@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Eran Haim — AI Integration & Full-Stack Developer",
-  description: "I build AI-powered web apps and high-quality user experiences. Full-stack developer focused on AI integration, clean architecture, and shipping fast.",
-  keywords: ["AI Integration", "Full-Stack Developer", "Next.js", "TypeScript", "React", "AI", "Web Development"],
-  authors: [{ name: "Eran Haim" }],
-  creator: "Eran Haim",
+  title: "ערן חיים - בניית אתרים ואפליקציות לעסקים",
+  description: "אני בונה אתרי אינטרנט מהירים ומותאמים לעסקים קטנים וגדולים עם שילוב של AI שמביא לידים - מ-0 ועד אתר שעובד ונראה מדהים!",
+  keywords: ["בניית אתרים", "פיתוח אפליקציות", "AI", "צ'אטבוטים", "אוטומציות", "Next.js", "פיתוח מהיר"],
+  authors: [{ name: "ערן חיים" }],
+  creator: "ערן חיים",
   openGraph: {
-    title: "Eran Haim — AI Integration & Full-Stack Developer",
-    description: "I build AI-powered web apps and high-quality user experiences.",
+    title: "ערן חיים - בניית אתרים ואפליקציות לעסקים",
+    description: "אני בונה אתרי אינטרנט מהירים ומותאמים לעסקים קטנים וגדולים עם שילוב של AI שמביא לידים - מ-0 ועד אתר שעובד ונראה מדהים!",
     type: "website",
-    locale: "en_US",
+    locale: "he_IL",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Eran Haim — AI Integration & Full-Stack Developer",
-    description: "I build AI-powered web apps and high-quality user experiences.",
+    title: "ערן חיים - בניית אתרים ואפליקציות לעסקים",
+    description: "אני בונה אתרי אינטרנט מהירים ומותאמים לעסקים קטנים וגדולים עם שילוב של AI שמביא לידים - מ-0 ועד אתר שעובד ונראה מדהים!",
   },
   robots: {
     index: true,
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="he" dir="rtl" className="scroll-smooth font-hebrew">
       <head>
         {/* JSON-LD Structured Data */}
         <script

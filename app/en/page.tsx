@@ -1,14 +1,14 @@
 "use client";
 
-import Header from "@/components/he/Header";
-import About from "@/components/he/About";
-import VisualProjects from "@/components/he/VisualProjects";
-import Pricing from "@/components/he/Pricing";
-import Contact from "@/components/he/Contact";
+import Header from "@/components/en/Header";
+import About from "@/components/en/About";
+import VisualProjects from "@/components/en/VisualProjects";
+import Pricing from "@/components/en/Pricing";
+import Contact from "@/components/en/Contact";
 
-export default function Home() {
+export default function EnglishHome() {
   return (
-    <main className="min-h-screen bg-navy-900 text-white overflow-hidden">
+    <main className="min-h-screen bg-gray-900 text-white overflow-hidden">
       {/* Header Navigation */}
       <Header />
 
@@ -70,10 +70,11 @@ export default function Home() {
             {/* Animated Subtitle */}
             <div className="space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-300">
-                בניית אתרים ואפליקציות לעסקים
+                Website & App Development for Businesses
               </h2>
               <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
-                <span className="text-darkBlue-400 font-semibold">אני בונה אתרי אינטרנט מהירים ומותאמים לעסקים קטנים וגדולים עם שילוב של AI שמביא לידים</span> - מ-0 ועד אתר שעובד ונראה מדהים!
+                I build <span className="text-darkBlue-400 font-semibold">fast, custom websites</span> for small and large businesses
+                <span className="text-darkBlue-400 font-semibold"> with AI features that generate leads</span> - from 0 to a stunning, live website!
               </p>
             </div>
 
@@ -86,7 +87,7 @@ export default function Home() {
                 }}
                 className="group relative px-8 py-4 bg-gradient-to-r from-darkBlue-500 to-blue-600 rounded-full text-white font-semibold text-lg shadow-2xl hover:shadow-darkBlue-500/25 transition-all duration-300 hover:scale-105 transform"
               >
-                <span className="relative z-10">ראה את העבודות שלי</span>
+                <span className="relative z-10">See My Work</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-darkBlue-500 to-blue-600 rounded-full blur opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               
@@ -97,20 +98,13 @@ export default function Home() {
                 }}
                 className="px-8 py-4 border-2 border-darkBlue-500 text-darkBlue-400 rounded-full font-semibold text-lg hover:bg-darkBlue-500 hover:text-white transition-all duration-300 hover:scale-105 transform"
               >
-                צור קשר
+                Contact Me
               </button>
             </div>
 
             {/* Tech Stack Badges */}
             <div className="flex flex-wrap justify-center gap-3 pt-8">
-              {[
-                'פיתוח מהיר (7 ימים!)',
-                'Next.js + AI',
-                'אתרי תדמית',
-                'צ\'אטבוטים',
-                'SEO & מהירות',
-                'תחזוקה שוטפת'
-              ].map((tech, index) => (
+              {['Fast Development (7 days!)', 'Next.js + AI', 'Business Websites', 'Chatbots', 'SEO & Speed', 'Ongoing Support'].map((tech, index) => (
                 <span 
                   key={tech}
                   className="px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-full text-sm font-medium text-gray-300 hover:text-darkBlue-400 hover:border-darkBlue-500 transition-all duration-300 hover:scale-110 transform"

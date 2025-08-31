@@ -6,12 +6,17 @@
 :root {
   --primary: #1e40af;
   --primary-dark: #1e3a8a;
+  --primary-foreground: #ffffff;
   --secondary: #3b82f6;
   --accent: #60a5fa;
   --background: #0f172a;
+  --foreground: #ffffff;
   --surface: #1e293b;
   --text: #ffffff;
   --text-secondary: #e2e8f0;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --border: #374151;
 }
 
 /* Custom Animations */

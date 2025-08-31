@@ -72,10 +72,9 @@ export default function HebrewHome() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-300">
                 בניית אתרים ואפליקציות לעסקים
               </h2>
-              <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
-                אני בונה <span className="text-darkBlue-400 font-semibold">אתרי אינטרנט מהירים ומותאמים</span> לעסקים קטנים וגדולים
-                <span className="text-darkBlue-400 font-semibold"> עם שכבת AI שמביאה לידים</span> - מ-0 ועד אתר שעובד ונראה מדהים!
-              </p>
+                      <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
+          <span className="text-darkBlue-400 font-semibold">אני בונה אתרי אינטרנט מהירים ומותאמים לעסקים קטנים וגדולים עם שילוב של AI שמביא לידים</span> - מ-0 ועד אתר שעובד ונראה מדהים!
+        </p>
             </div>
 
             {/* Action Buttons */}
